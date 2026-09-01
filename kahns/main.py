@@ -15,13 +15,6 @@ tasks = [
     Task("send",["package"])
 ]
 
-## Cycle test:
-# tasks = [
-#     Task("a", ["c"]),
-#     Task("b", ["a"]),
-#     Task("c", ["b"]),
-# ]
-
 def main():
     parallel_schedule = make_parallel_stages(tasks)
     print(f"Kahn Parallel scheduling: {parallel_schedule}")
