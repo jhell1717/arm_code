@@ -14,7 +14,6 @@ def make_parallel_stages(tasks: list[Task]) -> list[ExecutionStage]:
     while remaining_tasks:
       ready = sorted(name for name, deps in remaining_tasks.items() if not deps)
 
-
       if not ready:
         stuck = ", ".join(sorted(remaining_tasks))
         raise RuntimeError(f'cycle detected among tasks in {stuck}')

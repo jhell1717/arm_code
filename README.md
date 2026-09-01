@@ -1,5 +1,7 @@
 # Task Scheduler — Kahn's Algorithm
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jhell1717/arm_code/blob/main/notebooks/example.ipynb)
+
 This project schedules a set of tasks that depend on one another, using
 **Kahn's algorithm** — the classic approach for topologically sorting a
 directed acyclic graph (DAG). It ships two flavours of the same idea:
