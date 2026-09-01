@@ -2,4 +2,5 @@
 *.pyc 
 __pycache__/
 *.pyc
+kahns/__pycache__/
 .pytest_cache/

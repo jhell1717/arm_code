@@ -1,7 +1,7 @@
-
+from utils import Task
 
 def _validate_task(tasks: list[Task]) -> None:
-  seen: set[str] = set()
+  seen: set[str] = set() #set so cant contain duplicates.
 
   # Raise error for duplicate tasks, otherwise add to seen.
   for t in tasks:
